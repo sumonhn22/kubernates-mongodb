@@ -1,12 +1,13 @@
-### kubectl apply commands in order
+# kubectl apply commands in order
     
-    ``` kubectl apply -f mongo-secret.yaml```
+    kubectl apply -f mongo-secret.yaml
+    kubectl apply -f mongo.yaml    
+    kubectl apply -f mongo-configmap.yaml 
+    kubectl apply -f mongo-express.yaml
     
-    ``` kubectl apply -f mongo.yaml```
-    
-    ```kubectl apply -f mongo-configmap.yaml ```
-    
-    ``` kubectl apply -f mongo-express.yaml```
+### Find a URL to external service in minikube
+
+ minikube service mongo-express-service
 
 ### kubectl get commands
 
@@ -23,9 +24,7 @@
     kubectl describe service mongodb-service
     kubectl logs mongo-express-xxxxxx
 
-### Find a URL to external service in minikube
-
-    ``` minikube service mongo-express-service```
+ 
     
     
     Details: https://www.youtube.com/watch?v=EQNO_kM96Mo
